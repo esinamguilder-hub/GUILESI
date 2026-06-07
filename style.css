@@ -21,6 +21,15 @@ header{
     border-radius:50px;
     cursor:pointer;
 }
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .card{
+background:#1e1e1e;
+color:white;
+}
 nav a{
     color:white;
     text-decoration:none;
