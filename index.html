@@ -8,11 +8,9 @@
     <header>
     <h1>GUILESI Education</h1>
 
-    <button class="dark-btn" onclick="toggleMode()">
-        🌙 Dark Mode
-    </button
-    
-    
+       <button onclick="darkMode()">
+🌙 Dark Mode
+       </button> 
     <nav>
         <a href="index.html">Home</a>
         <a href="subjects.html">Subjects</a>
@@ -59,12 +57,27 @@ document.body.classList.toggle("dark");
         <h3>Scholarships</h3>
         <p>Find opportunities for university studies.</p>
     </div>
-    
+    <div class="card">
+<h2>Student Dashboard</h2>
+
+<p>Biology: 80%</p>
+<progress value="80" max="100"></progress>
+
+<p>Physics: 65%</p>
+<progress value="65" max="100"></progress>
+
+<p>Chemistry: 70%</p>
+<progress value="70" max="100"></progress>
+    </div>
 </section>
 
 <footer>
     <p>© 2026 GUILESI Education</p>
 </footer>
-
+<script>
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+</script>
 </body>
 </html>
