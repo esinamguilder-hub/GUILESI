@@ -8,6 +8,7 @@
 
 <header>
     <h1>GUILESI Education</h1>
+    <button onclick="toggleMode()">🌙 Dark Mode</button>
     <nav>
         <a href="index.html">Home</a>
         <a href="subjects.html">Subjects</a>
@@ -18,7 +19,11 @@
         <a href="contact.html">Contact</a>
     </nav>
 </header>
-
+<script>
+function toggleMode() {
+document.body.classList.toggle("dark");
+}
+</script>
 <section class="hero">
     <h2>Learn • Grow • Succeed</h2>
     <p>Education resources for SHS students in Ghana.</p>
@@ -34,11 +39,23 @@
         <h3>Coding Lessons</h3>
         <p>Learn HTML, CSS and JavaScript.</p>
     </div>
+    <div class="card">
+<h2>Biology Test</h2>
+
+<p>Which organelle controls the activities of a cell?</p>
+
+<button onclick="alert('Wrong')">Ribosome</button>
+<button onclick="alert('Correct')">Nucleus</button>
+<button onclick="alert('Wrong')">Vacuole</button>
+<button onclick="alert('Wrong')">Cell Wall</button>
+
+    </div>
 
     <div class="card">
         <h3>Scholarships</h3>
         <p>Find opportunities for university studies.</p>
     </div>
+    
 </section>
 
 <footer>
