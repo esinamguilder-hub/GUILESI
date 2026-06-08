@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Study Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🤖 AI Study Assistant</h1>
+
+<div class="card">
+
+<h2>Ask Yourself:</h2>
+
+<ul>
+<li>What topic am I struggling with?</li>
+<li>What formulas do I need to revise?</li>
+<li>Which WAEC topics appear often?</li>
+<li>What is today's study goal?</li>
+</ul>
+
+</div>
+
+</body>
+</html>
