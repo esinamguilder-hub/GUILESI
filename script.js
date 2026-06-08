@@ -29,5 +29,42 @@ box.innerHTML =
 }
 
 }
+function calculateScore() {
 
+let score = 0;
+
+document
+.querySelectorAll('input[type="radio"]:checked')
+.forEach(answer => {
+    score += Number(answer.value);
+});
+
+let grade = "";
+
+if(score >= 8) grade = "A1";
+else if(score >= 7) grade = "B2";
+else if(score >= 6) grade = "B3";
+else if(score >= 5) grade = "C4";
+else if(score >= 4) grade = "C5";
+else if(score >= 3) grade = "C6";
+else grade = "F9";
+
+document.getElementById("result").innerHTML =
+`🏆 Score: ${score}/10 | Grade: ${grade}`;
+
+localStorage.setItem("lastScore", score);
+}
+    window.onload = function(){
+
+const score =
+localStorage.getItem("lastScore");
+
+if(score){
+document.getElementById("savedScore")
+.innerHTML =
+"📊 Previous Score: " + score + "/10";
+}
+
+    }
+    
 });
