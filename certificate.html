@@ -6,6 +6,27 @@
 </head>
 <body>
 
+<h1>🏅 GUILESI Certificate</h1>
+
+<input type="text" id="student" placeholder="Enter your name">
+
+<button onclick="generateCertificate()">
+Generate Certificate
+</button>
+
+<h2 id="certificate"></h2>
+
+<script>
+function generateCertificate(){
+let name=document.getElementById("student").value;
+
+document.getElementById("certificate").innerHTML=
+"Certificate awarded to " + name +
+" for successfully completing a GUILESI assessment.";
+}
+</script>
+
+
 <h1>🏆 GUILESI Certificate</h1>
 
 <p>
