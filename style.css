@@ -92,3 +92,18 @@ footer{
     padding:20px;
     margin-top:30px;
 }
+
+@media(max-width:768px){
+
+nav{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.card{
+width:90%;
+margin:auto;
+}
+
+    }
