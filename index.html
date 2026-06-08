@@ -71,6 +71,26 @@ document.body.classList.toggle("dark");
 <p>Chemistry: 70%</p>
 <progress value="70" max="100"></progress>
     </div>
+    <div class="card">
+<h2>🔥 Study Streak</h2>
+<p id="streak"></p>
+<button onclick="increaseStreak()">Studied Today</button>
+</div>
+
+<script>
+let streak=localStorage.getItem("streak") || 0;
+
+document.getElementById("streak").innerHTML=
+"Current Streak: " + streak + " days";
+
+function increaseStreak(){
+streak++;
+localStorage.setItem("streak",streak);
+
+document.getElementById("streak").innerHTML=
+"Current Streak: " + streak + " days";
+}
+</script>
 </section>
 
 <footer>
