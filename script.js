@@ -66,5 +66,15 @@ document.getElementById("savedScore")
 }
 
     }
-    
+    window.onload = function(){
+
+let score =
+localStorage.getItem("lastScore");
+
+if(score && document.getElementById("scoreDisplay")){
+document.getElementById("scoreDisplay").innerHTML =
+"Latest Score: " + score + "/10";
+}
+
+    }
 });
