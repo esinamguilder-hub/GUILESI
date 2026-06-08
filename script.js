@@ -13,3 +13,21 @@ window.onload = function() {
         document.body.classList.add("dark");
     }
 }
+window.addEventListener("load", () => {
+
+const score =
+localStorage.getItem("lastScore");
+
+if(score){
+
+const box =
+document.getElementById("savedScore");
+
+if(box){
+box.innerHTML =
+"Previous Score: " + score + "/10";
+}
+
+}
+
+});
