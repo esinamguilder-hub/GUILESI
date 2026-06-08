@@ -5,7 +5,28 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<h2>⏱️ WAEC Exam Timer</h2>
 
+<p>Time Remaining: <span id="timer">10:00</span></p>
+
+<script>
+let time = 600;
+
+setInterval(function() {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    document.getElementById("timer").innerHTML =
+        minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+    time--;
+
+    if(time < 0){
+        alert("Time is up!");
+        location.reload();
+    }
+},1000);
+</script>
 <header>
 <h1>Science Quiz</h1>
 </header>
